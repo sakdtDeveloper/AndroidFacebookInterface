@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FacebookInterface</string>
+    <string name="exemple_gmail_com">exemple@gmail.com</string>
+    <string name="mot_de_passe">mot de passe</string>
+    <string name="se_connecter">se connecter</string>
+    <string name="creer_un_compte">creer un compte?</string>
 </resources>
