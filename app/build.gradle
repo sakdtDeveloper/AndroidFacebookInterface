@@ -7,6 +7,8 @@ android {
     compileSdk 30
 
     defaultConfig {
+        configurations.all { resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' } }
+
         applicationId "de.thm.ap.androidfacebookinterface"
         minSdk 24
         targetSdk 30
