@@ -14,7 +14,13 @@ class HomeActivity : AppCompatActivity() {
 
 
       val listPost:ListView=findViewById(R.id.listPosts)
-       val postList= arrayListOf("Post 1","Post 2","Post 3","Post 4","Post 5")
+       val postList= arrayListOf(
+           Post("sommer","couche de soleil, plage , ibiza",R.drawable.image1),
+           Post("ocean"," blue, filipin",R.drawable.image2),
+           Post("Post3","couche de soleil, plage , ibiza",R.drawable.image3),
+           Post("Post4","sonido",R.drawable.image4),
+           Post("Post5","amaterazu",R.drawable.image5)
+       )
         listPost.adapter=PostAdapter(this,R.layout.item_post,postList
         )
 
