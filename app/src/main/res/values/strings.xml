@@ -6,12 +6,6 @@
     <string name="se_connecter">se connecter</string>
     <string name="creer_un_compte">creer un compte?</string>
     <string name="page_d_accueil">Page d\'accueil</string>
-    <string-array name="posts">
-        <item>Post 1</item>
-        <item>Post 2</item>
-        <item>Post 3</item>
-        <item>Post 4</item>
-        <item>Post 5</item>
-    </string-array>
+
 
 </resources>
