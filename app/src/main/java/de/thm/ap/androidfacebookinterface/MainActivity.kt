@@ -1,5 +1,6 @@
 package de.thm.ap.androidfacebookinterface
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -43,11 +44,28 @@ class MainActivity : AppCompatActivity() {
                 val correctPassword="1234"
 
                 if(txtEmail==correctEmail && txtPassword==correctPassword){
-                    Toast.makeText(
-                        this,
-                        "felicitation vous etes connectez",
-                        Toast.LENGTH_LONG
-                    ).show()
+
+                  email.setText("")
+                  password.setText("")
+                    //intent explicite:se deplacer d'une activite a une otre dans la meme application
+
+                 /*  val intentToHomeActivity: Intent =Intent(this,HomeActivity::class.java)
+                    intentToHomeActivity.putExtra("email",txtEmail)
+                    intentToHomeActivity.putExtra("password",txtPassword)
+                    startActivity(intentToHomeActivity)*/
+/*
+                    Intent(this,HomeActivity::class.java).also {
+                        it.putExtra("email",txtEmail)
+                        it.putExtra("password",txtPassword)
+                        startActivity(it)
+                    }*/
+
+                    Intent(this,HomeActivity::class.java).apply {
+                        putExtra("email",txtEmail)
+                        putExtra("password",txtPassword)
+                        startActivity(this)
+                    }
+
                 }else {
                     Toast.makeText(
                         this,
