@@ -6,6 +6,11 @@
     <string name="se_connecter">se connecter</string>
     <string name="creer_un_compte">creer un compte?</string>
     <string name="page_d_accueil">Page d\'accueil</string>
+    <string name="title">Title</string>
+    <string name="j_aime">j\'aime</string>
+    <string name="partager">partager</string>
+    <string name="description">description</string>
+    <string name="image">image</string>
 
 
 </resources>
