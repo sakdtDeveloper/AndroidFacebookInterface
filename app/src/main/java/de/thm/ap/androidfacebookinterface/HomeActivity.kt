@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
@@ -42,9 +43,30 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
-    //ajouter le menu
+    //ajouter le Optionmenu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
         return super.onCreateOptionsMenu(menu)
     }
+
+    //ajouter des ecouteurs au optionMenu
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+
+            R.id.addPost->{
+              Toast.makeText(this,"add",Toast.LENGTH_LONG).show()
+            }
+            R.id.setting->{
+                Toast.makeText(this,"setting",Toast.LENGTH_LONG).show()
+            }
+            R.id.logout->{
+                Intent(this,MainActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 }

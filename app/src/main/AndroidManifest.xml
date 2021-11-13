@@ -14,17 +14,17 @@
             android:exported="false"
             android:parentActivityName=".HomeActivity"
             />
-
+        <!--
+  Changer le nom de l'activite ds la barre de menu
+              Avoir la fleche de retour pr revenir a
+              L'activite precedente
+          -->
         <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:label="@string/home_activity"
-            android:parentActivityName=".MainActivity" />
-        <!--
-Changer le nom de l'activite ds la barre de menu
-            Avoir la fleche de retour pr revenir a
-            L'activite precedente
-        -->
+            />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
