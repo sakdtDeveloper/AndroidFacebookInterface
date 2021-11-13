@@ -1,5 +1,6 @@
 package de.thm.ap.androidfacebookinterface
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,7 @@ class PostAdapter(
     var values: ArrayList<Post>
 ):ArrayAdapter<Post>(mContext,ressource,values) {
 
+    @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
         //recuperer l'une des valeur du tablo a une position quelquonk

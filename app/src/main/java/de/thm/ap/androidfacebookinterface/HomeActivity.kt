@@ -1,10 +1,12 @@
 package de.thm.ap.androidfacebookinterface
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Toast
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,10 +21,22 @@ class HomeActivity : AppCompatActivity() {
            Post("ocean"," blue, filipin",R.drawable.image2),
            Post("Post3","couche de soleil, plage , ibiza",R.drawable.image3),
            Post("Post4","sonido",R.drawable.image4),
-           Post("Post5","amaterazu",R.drawable.image5)
-       )
-        listPost.adapter=PostAdapter(this,R.layout.item_post,postList
-        )
+           Post("Post5","amaterazu",R.drawable.image5))
+
+        listPost.adapter=PostAdapter(this,R.layout.item_post,postList)
+
+        listPost.setOnItemClickListener { adapterView, view, position, id ->
+            Intent(this,PostDetailActivity::class.java).apply {
+
+                putExtra("title",postList[position].title)
+                putExtra("description",postList[position].description)
+                putExtra("image",postList[position].image)
+
+                startActivity(this)
+            }
+        }
+
+
 
     }
 }

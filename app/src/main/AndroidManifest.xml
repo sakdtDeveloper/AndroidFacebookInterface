@@ -9,19 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFacebookInterface">
-
+        <activity
+            android:name=".PostDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity"
+            />
 
         <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:label="@string/home_activity"
-            android:parentActivityName=".MainActivity"/><!--Changer le nom de l'activite ds la barre de menu
+            android:parentActivityName=".MainActivity" />
+        <!--
+Changer le nom de l'activite ds la barre de menu
             Avoir la fleche de retour pr revenir a
-            L'activite precedente-->
-
-
-
-
+            L'activite precedente
+        -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
