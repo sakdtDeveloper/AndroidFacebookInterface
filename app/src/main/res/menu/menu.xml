@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="@string/ajouter"
+        app:showAsAction="always" />
+
+    <item android:title="@string/setting" />
+    <item android:title="@string/logout" />
+</menu>

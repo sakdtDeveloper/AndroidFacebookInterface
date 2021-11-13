@@ -11,6 +11,9 @@
     <string name="partager">partager</string>
     <string name="description">description</string>
     <string name="image">image</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
 
 
 </resources>
