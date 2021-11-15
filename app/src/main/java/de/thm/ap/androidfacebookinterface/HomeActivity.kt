@@ -44,16 +44,20 @@ class HomeActivity : AppCompatActivity() {
             }
         }
 
-       //initialisation du contextMenu sur la liste
+       //initialisation du contextMenu sur la liste /************************************
 
         registerForContextMenu(listPost)
 
     }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     //ajouter le Optionmenu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
         return super.onCreateOptionsMenu(menu)
     }
+
+
 
     //ajouter des ecouteurs au optionMenu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -74,6 +78,15 @@ class HomeActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+
+
+
+
+
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     //ajouter un contextMenu
 
@@ -112,4 +125,6 @@ class HomeActivity : AppCompatActivity() {
         }
         return super.onContextItemSelected(item)
     }
+
+
 }

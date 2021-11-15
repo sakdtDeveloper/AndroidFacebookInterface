@@ -32,6 +32,17 @@
         android:layout_marginStart="16dp"
         android:textAppearance="?attr/textAppearanceBody2"
         />
+
+    <ImageView
+        android:id="@+id/show_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24"
+
+         />
     <TextView
         android:id="@+id/description"
         android:layout_width="0dp"
@@ -70,12 +81,9 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/image"
         app:layout_constraintStart_toEndOf="@id/btn_like"
-
-
-
-
-
         />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
